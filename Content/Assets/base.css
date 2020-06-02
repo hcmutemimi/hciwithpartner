@@ -1,0 +1,131 @@
+﻿:root {
+    /* --primary-color:#ed5c3f;
+    --second-color:#fe6433; rgb(89,136,70)*/
+    /* --primary-color:#409e73; */
+    --second-color: rgb(82, 190, 136);
+    --third-color: #d1e9cd;
+    --white-color: #ffffff;
+    --black-color: #000;
+    --text-color: #333;
+    --star-gold-color: #FFCE3E;
+    --border-color: #dbdbdb;
+    --third-color: rgb(209,233,205);
+    --header-with-search: 76px;
+    --height-ul-nav: 1248px;
+    --color-item-product: #105f19;
+    --color-2: #199427;
+    --header: 188px;
+    --header-navbar: 60px;
+    --color-price: #ff0000;
+    --header-navbar-scroll: calc(var(--header) - var(--header-navbar));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 100% ~ 16px // HACK */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    /* sans-serif : chuẩn phông ko có chân */
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@keyframes btn-wobble-vertical {
+    16.65% {
+        transform: translateY(3px);
+    }
+
+    33.3% {
+        transform: translateY(-4px);
+    }
+
+    49.95% {
+        transform: translateY(2px);
+    }
+
+    66.6% {
+        transform: translateY(-1px);
+    }
+
+    83.25% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInnavbar {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeOutfavourite {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(27px);
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    /* border: none; */
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    background-color: var(--primary-color);
+    color: black;
+}
