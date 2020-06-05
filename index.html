@@ -379,27 +379,31 @@
     <div class="grid">
         <div class="slide-img-header">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="5000">
-                        <img src="/Content/img/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active carousel-item--height " data-interval="5000">
+                        <img src="/Content/img/slide1.jpg" class="d-block w-100 img-height" alt="..." >
                     </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="/Content/img/slide3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item carousel-item--height " data-interval="5000" >
+                        <img src="/Content/img/slide3.png" class="d-block w-100 img-height" alt="..." >
                     </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="/Content/img/slide5.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item carousel-item--height " data-interval="5000" >
+                        <img src="/Content/img/slide5.png" class="d-block w-100 img-height" alt="...">
                     </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="/Content/img/slide2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item carousel-item--height " data-interval="5000">
+                        <img src="/Content/img/slide2.png" class="d-block w-100 img-height" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <!-- <span class="sr-only">Previous</span> -->
+                    
+                    <span class="button-prev">
+                        <i class="fas fa-angle-left carousel-control-prev-icon " aria-hidden="true"></i> </span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="button-prev">
+                    <i class="fas fa-angle-right carousel-control-next-icon"  aria-hidden="true"></i>
+                </span>
+                    <!-- <span class="sr-only">Next</span> -->
                 </a>
             </div>
         </div>
@@ -411,374 +415,499 @@
             <h2 class="label__product__title">TOP MỸ PHẨM ĐƯỢC YÊU THÍCH NHẤT</h2>
         </div>
         <div class="row">
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main ">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">129,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">180,000<sup>đ</sup></span>
+                                    <span class="price--old">220,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">130,000<sup>đ</sup></span>
+                                    <span class="price--old">170,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">165,000<sup>đ</sup></span>
+                                    <span class="price--old">190,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">120,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">124,000<sup>đ</sup></span>
-                            <span class="price--old">160,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">180,000<sup>đ</sup></span>
-                            <span class="price--old">220,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">130,000<sup>đ</sup></span>
-                            <span class="price--old">170,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">165,000<sup>đ</sup></span>
-                            <span class="price--old">190,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">120,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
     </div>
     <div class="grid__row-2 grid">
         <div class="label__product">
             <h2 class="label__product__title">TRANG ĐIỂM</h2>
         </div>
         <div class="row">
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main owl-theme owl-loaded">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">129,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">180,000<sup>đ</sup></span>
+                                    <span class="price--old">220,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">130,000<sup>đ</sup></span>
+                                    <span class="price--old">170,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">165,000<sup>đ</sup></span>
+                                    <span class="price--old">190,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">120,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">124,000<sup>đ</sup></span>
-                            <span class="price--old">160,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">180,000<sup>đ</sup></span>
-                            <span class="price--old">220,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">130,000<sup>đ</sup></span>
-                            <span class="price--old">170,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">165,000<sup>đ</sup></span>
-                            <span class="price--old">190,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">120,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </div>
@@ -787,186 +916,249 @@
             <h2 class="label__product__title">CHĂM SÓC DA</h2>
         </div>
         <div class="row">
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main owl-theme owl-loaded">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">129,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">180,000<sup>đ</sup></span>
+                                    <span class="price--old">220,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">130,000<sup>đ</sup></span>
+                                    <span class="price--old">170,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">165,000<sup>đ</sup></span>
+                                    <span class="price--old">190,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">120,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">124,000<sup>đ</sup></span>
-                            <span class="price--old">160,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">180,000<sup>đ</sup></span>
-                            <span class="price--old">220,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">130,000<sup>đ</sup></span>
-                            <span class="price--old">170,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">165,000<sup>đ</sup></span>
-                            <span class="price--old">190,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
-
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">120,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </div>
@@ -975,308 +1167,563 @@
             <h2 class="label__product__title">CHĂM SÓC CƠ THỂ </h2>
         </div>
         <div class="row">
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
-                            </div>
-                        </a>
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main owl-theme owl-loaded">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">129,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
                             </div>
-                        </a>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">124,000<sup>đ</sup></span>
-                            <span class="price--old">160,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
                             </div>
-                        </a>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">180,000<sup>đ</sup></span>
-                            <span class="price--old">220,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
                             </div>
-                        </a>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">180,000<sup>đ</sup></span>
+                                    <span class="price--old">220,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">130,000<sup>đ</sup></span>
-                            <span class="price--old">170,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
                             </div>
-                        </a>
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
-                        </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">165,000<sup>đ</sup></span>
-                            <span class="price--old">190,000<sup>đ</sup></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__column--2--5 col-lg-2">
-                <div class="border-col">
-                    <div class="home__product__item">
-                        <a href="" class="home__product__item--img">
-                            <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">130,000<sup>đ</sup></span>
+                                    <span class="price--old">170,000<sup>đ</sup></span>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">165,000<sup>đ</sup></span>
+                                    <span class="price--old">190,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-                    </div>
-                    <a href="" class="favourite" title="sản phẩm yêu thích">
-                        <!-- favourite--active -->
-                        <i class="far fa-heart heart--transparent"></i>
-                    </a>
-                    <button class="btn__cart">
-                        <div class="btn__cart--icon--cricle">
-                            <i class="fas fa-cart-plus btn__cart--cart"></i>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">120,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
-                        <span class="btn__cart--title">Thêm giỏ hàng</span>
-                    </button>
-                    <div class="home__product__img--info">
-                        <a class="home__product__img--title">
-                            <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
-                        </a>
-                        <div class="home__product__img--price">
-                            <span class="price--new">120,000<sup>đ</sup></span>
-                            <span class="price--old">180,000<sup>đ</sup></span>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="grid__row-2 grid">
+    <div class="grid__row-2 grid margin-top-bottom">
         <div class="label__product">
             <h2 class="label__product__title">TẠP CHÍ LÀM ĐẸP</h2>
         </div>
         <div class="row">
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main owl-theme owl-loaded">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
 
-            <div class="grid__column--2--4 col-lg-3">
-                <a href="lamdep" class="home__product__item--2--4">
-                    <div class="home__product__item--img--2--4" style="background-image: url(https://cor.vn/uploads/source/tapchilamdep/sequence04still007.png);">
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home__product__img--info--2--4">
-                        <a href="#" class="home__product__img--title--2--4">
-                            Các bước chăm sóc da cơ bản hằng ngày
-                        </a>
-                        <p class="home__product__img--detail--2--4">
-                            Theo “bậc thầy” về chăm sóc da đến từ Nhật Bản- Chizu Saeki thì nguyên tắc chính trong việc chăm sóc da để có một làn da khỏe đẹp đó là chính bạn cần giữ thói quen và tập cách chăm sóc da hàng ngày hợp lý.
-                        </p>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="grid__column--2--4 col-lg-3">
-                <a href="lamdep" class="home__product__item--2--4">
-                    <div class="home__product__item--img--2--4" style="background-image: url(https://cor.vn/uploads/source/tapchilamdep/images.jpg);">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a1-16112018114052.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì BBia Last Velvet Lip Tint #Version 1 (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">180,000<sup>đ</sup></span>
+                                    <span class="price--old">220,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home__product__img--info--2--4">
-                        <a href="#" class="home__product__img--title--2--4">
-                            Bí quyết chăm sóc da cần phải biết trước khi trang điểm
-                        </a>
-                        <p class="home__product__img--detail--2--4">
-                            Một lọ kem nền tốt chưa chắc đã mang lại một lớp trang điểm bền đẹp. Một lớp nền mịn mượt, trong trẻo được tạo nên từ rất nhiều yếu tố khác nhau. Có thể nói những bước dưỡng da trước khi bắt tay vào makeup chính là điều kiện quyết định đầu tiên.
-                        </p>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a3-03112018023519.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Phấn Nước Missha Magic Cushion Cover Lasting (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">130,000<sup>đ</sup></span>
+                                    <span class="price--old">170,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </a>
-            </div>
-            <div class="grid__column--2--4 col-lg-3">
-                <a href="lamdep" class="home__product__item--2--4">
-                    <div class="home__product__item--img--2--4" style="background-image: url(https://cor.vn/uploads/source/tapchilamdep/545233buocduongdamuahedongiannhunghieuquakhongngo.jpg);">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a2-22102018094443.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Kem Dưỡng Da Chống Lão Hóa The Face Shop PomeGranate&Collagen Volume Lifting Cream (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">165,000<sup>đ</sup></span>
+                                    <span class="price--old">190,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home__product__img--info--2--4">
-                        <a href="#" class="home__product__img--title--2--4">
-                            Nguyên tắc chăm sóc da không thể bỏ qua trong mùa hè
-                        </a>
-                        <p class="home__product__img--detail--2--4">
-                            "Nếu không có chế độ chăm sóc hợp lý, da của chị em phụ nữ rất dễ sạm, nám, tổn thương và nhanh lão hóa."
-                        </p>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">120,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="grid__column--2--4 col-lg-3">
-                <a href="lamdep" class="home__product__item--2--4">
-                    <div class="home__product__item--img--2--4" style="background-image: url(https://cor.vn/uploads/source/tapchilamdep/suaruamatcetaphil118ml1m4g3xh1xjssimgab1f47350x350maxb.jpg);">
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/mat-na-tram-tra.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Mặt Nạ The Body Shop Tea Tree Skin Clearning Clay Mask</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">129,000<sup>đ</sup></span>
+                                    <span class="price--old">180,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home__product__img--info--2--4">
-                        <a href="#" class="home__product__img--title--2--4">
-                            7 Cách dùng Sữa rửa mặt Cetaphil mới lạ nhưng cực kì hiệu quả
-                        </a>
-                        <p class="home__product__img--detail--2--4">
-                            Cetaphil là sản phẩm không chứa kiềm, có chỉ số pH an toàn với mọi loại da, không tạo nhân trứng cá và không chứa hướng liệu. Sản phẩm này vừa có tác dụng làm sạch, vừa làm mềm và giữ lại độ ẩm cần thiết cho da. Bạn có thể sử dụng sữa rửa mặt Cetaphil cho da mặt, da tay và toàn thân
-                        </p>
+                    <div class="grid__column--2--5">
+                        <div class="border-col">
+                            <div class="home__product__item">
+                                <a href="" class="home__product__item--img">
+                                    <div class="home__product__item--upload" style="background-image: url(https://beautygarden.vn/Upload/Files/a0-08032019032914.jpg?width=350&height=391&v=29032020);">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <a href="" class="favourite" title="sản phẩm yêu thích">
+                                <!-- favourite--active -->
+                                <i class="far fa-heart heart--transparent"></i>
+                            </a>
+                            <button class="btn__cart">
+                                <div class="btn__cart--icon--cricle">
+                                    <i class="fas fa-cart-plus btn__cart--cart"></i>
+                                </div>
+                                <span class="btn__cart--title">Thêm giỏ hàng</span>
+                            </button>
+                            <div class="home__product__img--info">
+                                <a class="home__product__img--title">
+                                    <span> Son Kem Lì Romand Zero Velvet Tint (Bestseller)</span>
+                                </a>
+                                <div class="home__product__img--price">
+                                    <span class="price--new">124,000<sup>đ</sup></span>
+                                    <span class="price--old">160,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="grid__row-1 ">
-        <div class="content__row">
-            <div class="label__product--customer">
-                <div class="label__product ">
-                    <h2 class="label__product__title">ý kiến khách hàng</h2>
+   
+        <div class="grid__row-1 ">
+            <div class="content__row">
+                <div class="background-opacity-cus">
                 </div>
-                <div class="slideshow">
-                   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                       <div class="carousel-inner text-center">
-                            <div class="carousel-item active " data-interval="5000">
-                                <img src="/Content/img/customer1.jpg" alt="Alternate Text" class="img--feedback" />
-                                <div class="item-cus">
-                                    <h3 class="feedback--title">THANH NGÂN</h3>
-                                    <span class="feedback--content">
-                                        Lần đầu mua sản phẩm rất sợ hàng nhái, nhưng khi dùng rồi mới cảm nhận được sản phẩm ok lắm ạ,dùng được hàng chính hãng
-                                        mà còn được giá tốt. Lâu lâu shop có chương trình khuyến mãi. Mong shop bán nhiều mẫu mã hơn, đặc biệt sản phẩm từ Hàn Quốc,Nhật Bản...
-                                    </span>
-                                </div>
+                <div class="label__product--customer">
+                    <div class="label__product no-margin-label">
+                        <h2 class="label__product__title">ý kiến khách hàng</h2>
+                    </div>
+                    <div class="slideshow">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                                <div class="carousel-item active  " data-interval="5000">
+                                    <img src="/Content/img/customer1.jpg" alt="Alternate Text" class="img--feedback" />
+                                    <div class="item-cus">
+                                        <h3 class="feedback--title">THANH NGÂN</h3>
+                                        <span class="feedback--content">
+                                            Lần đầu mua sản phẩm rất sợ hàng nhái, nhưng khi dùng rồi mới cảm nhận được sản phẩm ok lắm ạ,dùng được hàng chính hãng
+                                            mà còn được giá tốt. Lâu lâu shop có chương trình khuyến mãi. Mong shop bán nhiều mẫu mã hơn, đặc biệt sản phẩm từ Hàn Quốc,Nhật Bản...
+                                        </span>
+                                    </div>
 
-                            </div>
-                            <div class="carousel-item " data-interval="6000">
-                                <img src="/Content/img/customer2.jpg" alt="" class="img--feedback">
-                                <div class="item-cus">
-                                    <h3 class="feedback--title">YẾN NHI</h3>
-                                    <span class="feedback--content">
-                                        Shop tư vấn nhiệt tình, giao hàng nhanh, đóng gói cẩn thận. Sản phẩm khỏi bàn rồi. Luôn ủng hộ shop, hi vọng shop không
-                                        làm mình thất vọng
-                                    </span>
                                 </div>
-                            </div>
-                            <div class="carousel-item " data-interval="8000">
-                                <img src="/Content/img/customer3.jpg" alt="" class="img--feedback">
-                                <div class="item-cus">
-                                    <h3 class="feedback--title">MẬU THÙY</h3>
-                                    <span class="feedback--content">
-                                        Hôm mình đặt nhầm sản phẩm, divên hệ lại shop, nhân viên hướng dẫn khá nhiệt tình và cụ thể làm mình thấy vô
-                                        biết ơn lắm ạ, Thanks shop nhiều nhiều. Vân luôn ủng hộ shop.
-                                    </span>
+                                <div class="carousel-item " data-interval="6000">
+                                    <img src="/Content/img/customer2.jpg" alt="" class="img--feedback">
+                                    <div class="item-cus">
+                                        <h3 class="feedback--title">YẾN NHI</h3>
+                                        <span class="feedback--content">
+                                            Shop tư vấn nhiệt tình, giao hàng nhanh, đóng gói cẩn thận. Sản phẩm khỏi bàn rồi. Luôn ủng hộ shop, hi vọng shop không
+                                            làm mình thất vọng shop tư vấn nhiệt tình, giao hàng nhanh, đóng gói cẩn thận.
+                                        </span>
+                                    </div>
                                 </div>
+                                <div class="carousel-item " data-interval="8000">
+                                    <img src="/Content/img/customer3.jpg" alt="" class="img--feedback">
+                                    <div class="item-cus">
+                                        <h3 class="feedback--title">MẬU THÙY</h3>
+                                        <span class="feedback--content">
+                                            Hôm mình đặt nhầm sản phẩm, liên hệ lại shop, nhân viên hướng dẫn khá nhiệt tình và cụ thể làm mình thấy vô
+                                            biết ơn lắm ạ, Thanks shop nhiều nhiều. Vân luôn ủng hộ shop.
+                                            Hôm mình đặt nhầm sản phẩm, liên hệ lại shop,
+                                    </div>
+                                    </div>
+                                <div class="carousel-item " data-interval="7000">
+                                    <img src="/Content/img/customer4.jpg" alt="" class="img--feedback">
+                                    <div class="item-cus">
+                                        <h3 class="feedback--title">NHUNG NHUNG</h3>
+                                        <span class="feedback--content">
+                                            Mình mới biết đến shop chưa lâu, nhưng hiện tại đã dùng mỹ phẩm hầu hết của bên shop luôn rồi á, hài lòng bởi cách nhiệt tình của nhân viên,
+                                            giá sản phẩm còn thấp hơn giá thị trường.
+                                        </span>
+                                    </div>
                                 </div>
-                            <div class="carousel-item " data-interval="7000">
-                                <img src="/Content/img/customer4.jpg" alt="" class="img--feedback">
-                                <div class="item-cus">
-                                    <h3 class="feedback--title">NHUNG NHUNG</h3>
-                                    <span class="feedback--content">
-                                        Mình mới biết đến shop chưa lâu, nhưng hiện tại đã dùng mỹ phẩm hầu hết của bên shop luôn rồi á, hài lòng bởi cách nhiệt tình của nhân viên,
-                                        giá sản phẩm còn thấp hơn giá thị trường.
-                                    </span>
-                                </div>
-                            </div>
-                       </div>
-                   
+                        </div>
+                    
+                        </div>
                     </div>
                 </div>
+            
             </div>
         </div>
-      </div>
+    
     <div class="grid__row-3 ">
         <div class="policy">
             <ul class="policy__list">
@@ -1322,10 +1769,8 @@
             </ul>
         </div>
     </div>
-    
- 
 
-    <div class="grid__row-2 showroom">
+    <div class="grid__row-2 showroom grid">
         <div class="label__product label__product--showroom">
             <h2 class="label__showroom">HỆ THỐNG CỬA HÀNG</h2>
             <div class="showroom__next__page">
@@ -1334,82 +1779,85 @@
 
             </div>
         </div>
-        <div class="row grid">
-
-            <div class="col-lg-3">
-                <div class="home__product__item--showroom">
-                    <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/0kAWNNP.jpg);">
-                        <div class="showroom--opacity">
+        <div class="row">
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-second owl-theme owl-loaded">
+                    <div class="home__product__item--showroom">
+                        <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/Vz9eK5B.jpg);">
+                            <div class="showroom--opacity">
+                            </div>
+                            <div class="showroom--title">
+                                <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                <a href="" class="showroom--opacity--title">Số 71, Đường số 3, Cư Xá Đô Thành, P4, Quận 3,Hồ Chí Minh</a>
+                            </div>
                         </div>
-                        <div class="showroom--title">
-                            <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
-                            <a href="" class="showroom--opacity--title">Số 71, Đường số 3, Cư Xá Đô Thành, P4, Quận 3,Hồ Chí Minh</a>
-                        </div>
+                        <p class="home__product__showroom--title">
+                            CN1 Quận 3, TP Hồ Chí Minh
+                        </p>
                     </div>
-                    <p class="home__product__showroom--title">
-                        CN1 Quận 3, TP Hồ Chí Minh
-                    </p>
-                </div>
-            </div>
-            <div class=" col-lg-3 ">
-                <div class="home__product__item--showroom">
-                    <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/uL3SJP0.jpg);">
-                        <div class="showroom--opacity">
+                    <div class="home__product__item--showroom">
+                        <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/uL3SJP0.jpg);">
+                            <div class="showroom--opacity">
 
+                            </div>
+                            <div class="showroom--title">
+                                <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                <a href="" class="showroom--opacity--title"> 79 Hai Bà Trưng, P.Diên Hồng, Tp.Pleiku,Tỉnh Gia Lai </a>
+                            </div>
                         </div>
-                        <div class="showroom--title">
-                            <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
-                            <a href="" class="showroom--opacity--title"> 79 Hai Bà Trưng, P.Diên Hồng, Tp.Pleiku,Tỉnh Gia Lai </a>
-                        </div>
+                        <p class="home__product__showroom--title">
+                            CN2 TP Pleiku, Tỉnh Gia Lai
+                        </p>
                     </div>
-                    <p class="home__product__showroom--title">
-                        CN2 TP Pleiku, Tỉnh Gia Lai
-                    </p>
-                </div>
-            </div>
-            <div class=" col-lg-3 ">
-                <div class="home__product__item--showroom">
-                    <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/c5DVbma.jpg);">
-                        <div class="showroom--opacity">
+                    <div class="home__product__item--showroom">
+                        <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/c5DVbma.jpg);">
+                            <div class="showroom--opacity">
 
+                            </div>
+                            <div class="showroom--title">
+                                <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                <a href="" class="showroom--opacity--title">98B Phan Đăng Lưu, P.3, Q.Phú Nhuận, Quận 3,Hồ Chí Minh</a>
+                            </div>
                         </div>
-                        <div class="showroom--title">
-                            <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
-                            <a href="" class="showroom--opacity--title">98B Phan Đăng Lưu, P.3, Q.Phú Nhuận, Quận 3,Hồ Chí Minh</a>
-                        </div>
-
-                    </div>
                     <p class="home__product__showroom--title">
                         CN3 Quận Phú Nhuận, TP Hồ Chí Minh
                     </p>
-                </div>
-            </div>
-            <div class=" col-lg-3 ">
-                <div class="home__product__item--showroom">
-                    <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/SW9hIJi.jpg);">
-                        <div class="showroom--opacity">
-                        </div>
-                        <div class="showroom--title">
-                            <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
-                            <a href="" class="showroom--opacity--title">152, Chùa Lộc, Quận Đống Đa, Hà Nội</a>
-                        </div>
                     </div>
-                    <p class="home__product__showroom--title">
-                        CN4 Quận Đống Đa, Hà Nội
-                    </p>
+                    <div class="home__product__item--showroom">
+                        <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/SW9hIJi.jpg);">
+                            <div class="showroom--opacity">
+                            </div>
+                            <div class="showroom--title">
+                                <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                <a href="" class="showroom--opacity--title">152, Chùa Lộc, Quận Đống Đa, Hà Nội</a>
+                            </div>
+                        </div>
+                        <p class="home__product__showroom--title">
+                            CN4 Quận Đống Đa, Hà Nội
+                        </p>
+                    </div>
+                    <div class="home__product__item--showroom">
+                        <div class="home__product__img--showroom" style="background-image: url(https://i.imgur.com/SW9hIJi.jpg);">
+                            <div class="showroom--opacity">
+                            </div>
+                            <div class="showroom--title">
+                                <i class="fas fa-map-marker-alt address--icon address--icon--opcity"></i>
+                                <a href="" class="showroom--opacity--title">152, Chùa Lộc, Quận Đống Đa, Hà Nội</a>
+                            </div>
+                        </div>
+                        <p class="home__product__showroom--title">
+                            CN4 Quận Đống Đa, Hà Nội
+                        </p>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <div class="border--footer"></div>
-    
     <footer class="footer">
         <div class="grid__row-4">
             <div class="background__footer">
-                <div class="backgroung__footer--opacity">
+                <div class="background__footer--opacity">
                     <ul class="layout__footer--list">
 
                         <li class="layout__footer--item">
@@ -1545,11 +1993,29 @@
             </div>
         </div>
     </footer>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-carousel ">
+                <div class="owl-carousel carousel-main ">
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
 
+
+                    <div><img src="./Content/img/appstore1.png"></div>
+                    <div><img src="./Content/img/appstore1.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="/Content/jquery/jquery-3.5.1.js"></script>
     <script src="/Content/js/bootstrap.bundle.min.js"></script>
-    <script src="/Content/carousel/carousel.js"></script>
     <script src="/Content/carousel/owl.carousel.min.js"></script>
+    <script src="/Content/carousel/carousel.js"></script>
 </body>
 </html>

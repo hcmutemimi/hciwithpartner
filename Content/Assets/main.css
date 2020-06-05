@@ -480,6 +480,11 @@
     border: 1px solid rgba(0,0,0,0.1);
 }
 
+
+.grid__column--2--5:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
 .grid__column--2--5:hover .btn__cart {
     display: block;
     bottom: 85px;
@@ -489,7 +494,9 @@
 .grid__column--2--5:hover .border-col {
     border: none;
 }
-
+.owl-dots{
+    display:none;
+}
 .grid__column--2--5:hover .favourite {
     opacity: 1;
     display: block;
@@ -500,14 +507,14 @@
     border: 1px solid var(--color-2);
 }
 
-    .grid__column--2--5:hover .home__product__item--upload {
-        transform: scale(1.1);
-    }
+.grid__column--2--5:hover .home__product__item--upload {
+    transform: scale(1.1);
+}
 
 .btn__cart {
     bottom: 43px;
     position: absolute;
-    width: 202px;
+    width: 192px;
     background-color: rgba(0,0,0, 0.4);
     color: var(--white-color);
     height: 42px;
@@ -521,7 +528,15 @@
     opacity: 0;
     left: 0;
 }
-
+.btn__cart:focus{
+    outline: none;
+}
+.btn__cart--title:focus{
+    outline: none;
+}
+.btn__cart--icon--cricle{
+    outline: none;
+}
 .favourite {
     top: 20px;
     right: -22px;
@@ -540,9 +555,7 @@
 
 .home__product__item--upload {
     width: 168px;
-    margin: 8.5px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 12.5px auto;
     height: 190px;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -733,9 +746,13 @@ grid__row-1 {
     width: 100%;
 }
 .content__row {
-    background-color: #eceeed;
+    /* background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v701-tang-06b-floral_1.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=&markalpha=90&markpad=13&markscale=10&markx=25&q=65&usm=15&vib=3&w=800&s=821d8fe6c76dac22aaedb62dbe8b769c"); */
+    
+   background-color: #eceeed;
+   
     width: 100%;
 }
+
 .policy {
     background-color: var(--third-color);
 }
@@ -1075,7 +1092,7 @@ grid__row-1 {
     background-size: contain;
 }
 
-.backgroung__footer--opacity {
+.background__footer--opacity {
     background-color: #202121;
     opacity: 0.8;
 }
@@ -1085,3 +1102,40 @@ grid__row-1 {
 .layout__footer--item {
     margin-bottom:20px;
 }
+.carousel-control-prev-icon{
+    font-size: 2.4rem;
+    color: #333;
+    background-image: none;
+}
+
+.carousel-control-next-icon{
+    font-size: 2.4rem;
+    color: #333;
+    background-image: none;
+}
+
+.button-prev{
+   
+    padding: 10px 8px;
+    
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    color: rgba(0,0,0,0.5);
+    background-color: #ccc;
+}
+.button-prev:hover{
+    background-color: var(--color-2);
+}
+.button-prev:hover .carousel-control-next-icon{
+    color:#fff;
+}
+.button-prev:hover .carousel-control-prev-icon{
+    color:#fff;
+}
+.margin-top-bottom{
+    margin-bottom: 45px ;
+}
+/* .no-margin-label{
+    padding-top: 0;
+} */

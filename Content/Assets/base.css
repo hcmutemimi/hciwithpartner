@@ -129,3 +129,6 @@ html {
     background-color: var(--primary-color);
     color: black;
 }
+.img-height {
+    height: 450px;
+}
