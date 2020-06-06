@@ -242,7 +242,7 @@
 .header-search-block-small {
     position: fixed;
     top: 10px;
-    right: 120px;
+    right: 125px;
     opacity: 1;
     animation: rotate360 0.4s;
     animation-delay: 0.5s;
@@ -373,7 +373,24 @@
     animation: rotate360 0.4s;
     animation-delay: 1s;
     color: var(--white-color);
-    padding: 8px 8px;
+    padding: 10px 10px;
+}
+.input--search--2:focus ~.header-search-history--2 {
+    display: block;
+}
+.header-search-history.header-search-history--2 {
+    position: absolute;
+    top: 78px;
+    box-shadow: none;
+}
+.header-search-history-heading--2 {
+    margin-left: 22px;
+}
+.header-search-history-item--2 {
+    padding-left: 22px;
+}
+.header-search-history.header-search-history--2 a {
+    color: var(--color-2);
 }
 .header-logo {
     width: 160px;
