@@ -6,8 +6,8 @@ $('.carousel-main').owlCarousel({
   autoplayHoverPause:true,
 responsiveClass: true,
   autoHeight: true,
-  autoplayTimeout: 2000,
-  smartSpeed: 800,
+  autoplayTimeout: 5000,
+  smartSpeed: 2500,
   //nav: true,
       responsive: {
       0: {
