@@ -19,5 +19,18 @@ document.addEventListener("DOMContentLoaded",function(){
 
         }
     });
-   
+     var mybutton = document.getElementById("scroll-to-top");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    document.getElementById('scroll-to-top').addEventListener("click", function(){
+        //Nếu button được click thì nhảy về đầu trang
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
 },false)

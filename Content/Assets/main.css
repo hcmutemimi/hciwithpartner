@@ -231,13 +231,13 @@
     position: absolute;
     border-radius: 38px;
     z-index: 3;
-    /* top: -50px; */
+    top: -40px;
     right: 330px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 .header-search-block-small {
     position: fixed;
@@ -1526,4 +1526,29 @@ grid__row-1 {
 .register-info{
     margin-top: 16px ;
     color: var(--color-2);
+}
+#scroll-to-top{
+    display: none;
+    bottom: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    z-index: 4;
+    background-color: rgba(3, 3, 3, 0.2);
+    border-radius: 6px;
+}
+button:focus {
+    outline:none;
+    outline:none;
+}
+img:focus{
+   outline: none;
+}
+.img-scroll{
+    height: 56px;
+    width: 56px;
 }
