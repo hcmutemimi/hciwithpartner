@@ -1506,16 +1506,24 @@ grid__row-1 {
 /* .no-margin-label{
     padding-top: 0;
 } */
+.block-mail{
+    margin-top: 14px;
+}
 .register-mail{
+    background-color: #ccc;
     height: 34px;
-    margin-top: 16px ;
-    margin-left: 0;
+    
+    margin: 0;
 }
 .register-mail-icon{
-    margin-left: 0;
-    margin-top: 16px;
+    margin: 0;
+  
     height: 35px;
     width: 36px;
     font-size: 1.4rem;
     color: var(--white-color);
+}
+.register-info{
+    margin-top: 16px ;
+    color: var(--color-2);
 }
