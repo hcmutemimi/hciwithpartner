@@ -6,7 +6,7 @@
 
     <link href="/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="/Content/fonts/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="/Content/carousel/owl.carousel.min.css" rel="stylesheet" />
     <link href="/Content/carousel/owl.theme.default.min.css" rel="stylesheet" />
    
@@ -20,10 +20,19 @@
         <div class="header">
             <div class="header-nav">
                 <ul class="header-nav-list">
-                    <li class="header__navbar_item header__navbar_item_separate separate-no-margin-left">
-                        <span class="header__navbar_title_no_pointer">
+                    <li class="header__navbar_item header__navbar_item_separate header__navbar_item_has_qr separate-no-margin-left">
                             Vào cửa hàng
-                        </span>
+                            <div class="header_qr">
+                                <img src="Content/img/QRcode.png" alt="QR code" class="header__qr_img">
+                                    <div class="header__qr_apps">
+                                        <a href="" class="header_qr_link">
+                                            <img src="Content/img/appstore1.png" alt="AppStore" class="header__qr_download header__qr_download_appstore">
+                                        </a>
+                                        <a href=""class="header_qr_link">
+                                            <img src="Content/img/chplay3.png" alt="CHplay" class="header__qr_download header__qr_download_chplay">
+                                        </a>
+                                    </div>
+                            </div>
                     </li>
                     <li class="header__navbar_item">
                         <span class="header__navbar_title_no_pointer">Kết nối </span>
@@ -50,7 +59,7 @@
                     <div class="header-search-input-wrap">
                         <input type="text" class="header-search-input" placeholder="Nhập để tìm kiếm sản phẩm">
                         <!-- search history -->
-                        <!-- <div class="header-search-history">
+                        <div class="header-search-history">
                                 <h4 class="header-search-history-heading">Lịch sử tìm kiếm</h4>
                                 <ul class="header-search-history-list">
                                     <li class="header-search-history-item">
@@ -66,7 +75,7 @@
                                         <a href="">xịt khoáng</a>
                                     </li>
                                 </ul>
-                        </div> -->
+                        </div>
                     </div>
 
                     <div class="header-search-icon-btn ">
@@ -85,7 +94,124 @@
                         <div class="cart-wrap">
                             <i class="header-cart-icon fas fa-shopping-cart">
                             </i>
-
+                            <div class="header-cart-list">
+                                <img src="Content/img/no-product.png" alt="" class="header-cart-no-cart-img">
+                                <p class="header-cart-msg">Chưa có sản phẩm<p>
+        
+                                <h4 class="header-cart-heading">Đã thêm sản phẩm</h4>
+                                <ul class="header-cart-list-item">
+                                    <!-- cart-item -->
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/chamsoccothe/rua-tay/gel-ru-a-tay-dr.auban-1.jpg" alt=""class ="header-cart-item-img">
+                                        <div class="header-cart-item-info">
+                                            <div class="header-cart-item-head">
+                                                <h5 class="header-cart-item-name">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</h5>
+                                                <div class="header-cart-item-price-wrap">
+                                                    <span class="header-cart-item-price"> 129.000đ </span>
+                                                    <span class="header-cart-item-multiply">x</span>
+                                                    <span class="header-cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-describe"> Chất gel trong suốt</span>
+                                                <span class="header-cart-item-delete">Xóa</span>
+                                            </div>                                  
+                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/trangdiem/mat/mascara/mascara-black-rouge-1.jpg" alt=""class ="header-cart-item-img">
+                                            <div class="header-cart-item-info">
+                                                <div class="header-cart-item-head">
+                                                    <h5 class="header-cart-item-name">Chuốt mi black rouge </h5>
+                                                    <div class="header-cart-item-price-wrap">
+                                                        <span class="header-cart-item-price"> 140.000đ </span>
+                                                        <span class="header-cart-item-multiply">x</span>
+                                                        <span class="header-cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="header-cart-item-body">
+                                                    <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                    <span class="header-cart-item-delete">Xóa</span>
+                                                </div>                                  
+                                            </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                            <img src="https://cor.vn/uploads/source/san-pham/trangdiem/moi/sonkem/g9/son-kem-g9-5.jpg" alt=""class ="header-cart-item-img">
+                                                <div class="header-cart-item-info">
+                                                    <div class="header-cart-item-head">
+                                                        <h5 class="header-cart-item-name">  Son kem lì G9 Skin First</h5>
+                                                        <div class="header-cart-item-price-wrap">
+                                                            <span class="header-cart-item-price">139.000đ </span>
+                                                            <span class="header-cart-item-multiply">x</span>
+                                                            <span class="header-cart-item-qnt">1</span>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="header-cart-item-body">
+                                                        <span class="header-cart-item-describe"> Sản phẩm bán chạy</span>
+                                                        <span class="header-cart-item-delete">Xóa</span>
+                                                    </div>                                  
+                                                </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                                <img src="https://cor.vn/uploads/source/san-pham/chamsocda/matna/matnadatset/goblin-apieu-4.jpg" alt=""class ="header-cart-item-img">
+                                                    <div class="header-cart-item-info">
+                                                        <div class="header-cart-item-head">
+                                                            <h5 class="header-cart-item-name">Mặt nạ dạng bột Apieu </h5>
+                                                            <div class="header-cart-item-price-wrap">
+                                                                <span class="header-cart-item-price"> 88.000đ </span>
+                                                                <span class="header-cart-item-multiply">x</span>
+                                                                <span class="header-cart-item-qnt">1</span>
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="header-cart-item-body">
+                                                            <span class="header-cart-item-describe"> Sản phẩm mới ra</span>
+                                                            <span class="header-cart-item-delete">Xóa</span>
+                                                        </div>                                  
+                                                    </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                                    <img src="https://cor.vn/uploads/source/san-pham/trangdiem/mat/phanmat/hold-live/bc572d9a526986785ea5276a0e1d8d69.jpg" alt=""class ="header-cart-item-img">
+                                                        <div class="header-cart-item-info">
+                                                            <div class="header-cart-item-head">
+                                                                <h5 class="header-cart-item-name">Phấn mặt color school </h5>
+                                                                <div class="header-cart-item-price-wrap">
+                                                                    <span class="header-cart-item-price">68.000đ </span>
+                                                                    <span class="header-cart-item-multiply">x</span>
+                                                                    <span class="header-cart-item-qnt">1</span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="header-cart-item-body">
+                                                                <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                                <span class="header-cart-item-delete">Xóa</span>
+                                                            </div>                                  
+                                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/trangdiem/moi/sonkem/dearmay/son-dearmay-velvet.jpg" alt=""class ="header-cart-item-img">
+                                            <div class="header-cart-item-info">
+                                                <div class="header-cart-item-head">
+                                                    <h5 class="header-cart-item-name">Son lì Deamay</h5>
+                                                    <div class="header-cart-item-price-wrap">
+                                                        <span class="header-cart-item-price"> 125.000đ </span>
+                                                        <span class="header-cart-item-multiply">x</span>
+                                                        <span class="header-cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                            <div class="header-cart-item-body">
+                                                    <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                    <span class="header-cart-item-delete">Xóa</span>
+                                                </div>                                  
+                                            </div>
+                                    </li>
+                                </ul> 
+                                <a href="#"class="btn-view-cart btn">
+                                <span class="btn-view-cart-label ">GIỎ HÀNG</span>
+                                </a>
+                            </div>
                             <span class="header-cart-notice">
                                 3
                             </span>
