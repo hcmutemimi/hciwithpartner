@@ -806,7 +806,7 @@
 .col__submenu::after {
     position: absolute;
     content: "";
-    top: 20px;
+    top: 18px;
     width: 90%;
     height: 1px;
     background-color: rgba(0,0,0,0.05);
