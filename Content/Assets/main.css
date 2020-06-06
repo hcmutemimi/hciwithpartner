@@ -421,6 +421,10 @@
     color: var(--white-color);
  
 }
+.btn.btn-view-cart:hover .cart-button-icon {
+    
+    color: #ccc;
+}
 .btn:focus {
     outline: 0;
     box-shadow: none;
@@ -428,6 +432,7 @@
 .cart-button-icon{
     margin-left: 6px;
     font-size: 1.5rem;
+
 
 }
 .header-cart-item:hover {
