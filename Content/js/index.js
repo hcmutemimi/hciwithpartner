@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
+    // Xử lí navbar
     var menunho = document.querySelector('.row-nav');
     
     window.addEventListener('scroll',function(){
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
         }
     });
+    //Xử lí button scroll
      var mybutton = document.getElementById("scroll-to-top");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
@@ -29,8 +31,62 @@ document.addEventListener("DOMContentLoaded",function(){
         }
     }
     document.getElementById('scroll-to-top').addEventListener("click", function(){
-        //Nếu button được click thì nhảy về đầu trang
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+       $("html,body").animate({scrollTop:0},500,'swing');
+       return false;
     });
+    // Xử lí button đăng kí, đăng nhập
+    //modal
+    var modalid=document.getElementById("modal__layout");
+  
+     // Nếu nhấn vào button đăng nhập
+     var modallogin=document.getElementById("login-button");
+
+     var  showformlogin=document.getElementById("form-login");
+ 
+     var btnshowformregisterfromlogin=document.getElementById("heading-register-from-loginform");
+     var showformregisterfromlogin=document.getElementById("form-register")
+     
+     //Listen for click
+     modallogin.addEventListener('click',openModal);
+     function openModal(){
+         modalid.style.display='flex';
+         showformregisterfromlogin.style.display='block';
+ 
+     }
+     btnshowformregisterfromlogin.addEventListener('click',openfromrgisterfromlogin);
+     function openfromrgisterfromlogin(){
+         showformlogin.style.display='none';
+ 
+         showformregister.style.display='block';
+        
+     }
+ 
+    // Nếu nhấn vào button đanwg ký
+
+    var modalregister=document.getElementById("register-button");
+
+    var  showformregister=document.getElementById("form-register");
+
+    var btnshowformloginfromregister=document.getElementById("heading-login-from-registerform");
+    var showformloginfromregister=document.getElementById("form-login")
+    
+    //Listen for click
+    modalregister.addEventListener('click',openModal);
+    function openModal(){
+        modalid.style.display='flex';
+        showformregister.style.display='block';
+
+    }
+    btnshowformloginfromregister.addEventListener('click',openfromloginfromregister);
+    function openfromloginfromregister(){
+        showformregister.style.display='none';
+
+        showformloginfromregister.style.display='block';
+       
+    }
+   
+
+
+    
+   
 },false)

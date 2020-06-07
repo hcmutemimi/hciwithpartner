@@ -144,16 +144,24 @@ html {
 .btn {
     min-width: 120px;
     height: 34px;
-    /* border: none; */
     border-radius: 3px;
     font-size: 1.2rem;
     padding: 0 12px;
     outline: none;
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
     background-color: var(--primary-color);
     color: black;
+    align-items: center;
 }
 .img-height {
     height: 450px;
+}
+.home__product__img--info a:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+.home__product__img--info--2--4 a:hover{
+    color: var(--color-2);
+    text-decoration: underline;
 }
