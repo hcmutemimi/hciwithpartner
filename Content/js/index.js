@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded",function(){
         
      }
  
-    // Nếu nhấn vào button đanwg ký
+    // Nếu nhấn vào button đăng ký
 
     var modalregister=document.getElementById("register-button");
 
@@ -81,12 +81,46 @@ document.addEventListener("DOMContentLoaded",function(){
     function openfromloginfromregister(){
         showformregister.style.display='none';
 
-        showformloginfromregister.style.display='block';
-       
+        showformloginfromregister.style.display='block';  
     }
-   
-
-
+    // xử lí ảnh khi onmouseover, onmouseout
+    var imagebig =document.getElementById("image-big");
+    var imagesmall =document.getElementById("image-small");
     
-   
+    (function(window,document,undefined)
+    {
+        var images=document.getElementById('image-small');
+        for(var i=0;i<images.length;i++){
+            images[i].addEventListener('mouseover',imageMouseOver,false);
+            images[i].addEventListener('mouseout',imageMouseOut,false);
+        }
+    })(window,window.document);
+    function imageMouseOver(event){
+        event=event|| window.event;
+        var image=event.target;
+        image.src=getNewImagePath(image.src);
+        console.log(image);
+    }
+    function imageMouseOut(event){
+        event =event|| window.event;
+        var image =event.target;
+        image.src=getNewImagePath(image.src);
+        console.log(image);
+    }
+    function getNewImagePath(path)
+    {
+    var newPath;
+    if (path.indexOf('_Hover') === -1) {
+        newPath = path.replace('.png', '_Hover.png');
+    } else {
+        newPath = path.replace('_Hover', '');
+    }
+    
+    return newPath;
+    }
+    //Di chuyển sản phẩm từ trang sản phẩm đến giỏ hàng
+    
+    
+
+
 },false)

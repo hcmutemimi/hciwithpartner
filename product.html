@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping smart</title>
+
+    <link href="/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/fonts/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="/Content/carousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/Content/carousel/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/Content/Assets/base.css" rel="stylesheet" />
+    <link href="/Content/Assets/main.css" rel="stylesheet" />
+   <link rel="stylesheet" href="./Content/Assets/product.css">
+   
+
+</head>
+<body>
+    <div class="grid">
+        <div class="header">
+            <div class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header__navbar_item header__navbar_item_separate header__navbar_item_has_qr separate-no-margin-left">
+                            Vào cửa hàng
+                            <div class="header_qr">
+                                <img src="Content/img/QRcode.png" alt="QR code" class="header__qr_img">
+                                    <div class="header__qr_apps">
+                                        <a href="" class="header_qr_link">
+                                            <img src="Content/img/appstore1.png" alt="AppStore" class="header__qr_download header__qr_download_appstore">
+                                        </a>
+                                        <a href=""class="header_qr_link">
+                                            <img src="Content/img/chplay3.png" alt="CHplay" class="header__qr_download header__qr_download_chplay">
+                                        </a>
+                                    </div>
+                            </div>
+                    </li>
+                    <li class="header__navbar_item">
+                        <span class="header__navbar_title_no_pointer">Kết nối </span>
+                        <a class="header__navbar_item__icon_link" title="kết nối facebook">
+                            <i class="header__navbar_icon fab fa-facebook"></i>
+                        </a>
+                        <a class="header__navbar_item__icon_link" title="kết nối instagram">
+                            <i class="header__navbar_icon fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-nav-list">
+                    <li class="header__navbar_item header__navbar_item-has-notify"> 
+                        <a href="" class="header__navbar_item_link ">
+                            <i class="header__navbar_icon far fa-bell"></i>Thông báo</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-viewed">
+                                        <a href=""class="header__notify-link">
+                                            <img src="https://cor.vn/uploads/source/san-pham/chamsocda/kitduongda/bo-kit-snail-truecica-some-by-mi-2.jpg" alt=""class ="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Dưỡng da Some By Mi trọn bộ</span>
+                                                <span class="header__notify-describe"> Bộ sưu tập mới ra của nhà sản xuất</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href=""class="header__notify-link">
+                                            <img src="https://cor.vn/uploads/source/san-pham/chamsocda/vien-uong/vie-n-uo-ng-angel-s-liquid.jpg" alt=""class ="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Viên uống trắng da</span>
+                                                <span class="header__notify-describe"> Sản phẩm bán chạy</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href=""class="header__notify-link">
+                                            <img src="https://cor.vn/uploads/source/san-pham/chamsocda/kemduong/kem-duong-trang-da-coringco-peach-whipping-tone-up-cream-5d89bc654aa74-24092019134909.png" alt=""class ="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Kem dướng nâng tone Coringco peach whipping tone up scream</span>
+                                                <span class="header__notify-describe">Dưỡng da ban ngày</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header_notify-footer">
+                                    <a href="" class="header_notify-footer-btn">xem tất cả
+                                    </a>   
+                                </footer>
+                              
+                            </div>
+                     </li>
+                    <li class="header__navbar_item">
+                        <a href="" class="header__navbar_item_link">
+                            <i class="header__navbar_icon far fa-question-circle"></i>Trợ giúp
+                        </a>
+                    </li>
+                    <li class="header__navbar_item header__navbar_item_separate__sign item-login" id="register-button">Đăng kí </li>
+                    <li class="header__navbar_item header__navbar_item_strong separate-no-margin-right"id="login-button">Đăng nhập</li>
+                    
+                    <!-- modal layout-->
+                    <div class="modal" id="modal__layout">
+                        <div class="modal__overlay"></div>
+                            <div class="modal__body">
+                    
+                        <!-- Register form -->
+                            <div class="auth__form " id="form-register">
+                                <div class="auth__form-container">
+                                        <div class="auth__form-header">
+                                            <h3 class="auth__form-heading" id="heading-register-from-registerform">Đăng ký</h3>
+                                            <span class="auth__form_switch-btn" id="heading-login-from-registerform">Đăng nhập</span>  
+                                        </div>
+
+                                        <div class="auth__form-form">
+                                            <div class="auth__form-group">
+                                                <input type="name" class="auth__form-input" placeholder="Email của bạn"></div>
+                                            <div class="auth__form-group">
+                                                <input type="pass" class="auth__form-input" placeholder="Mật khẩu của bạn"></div>
+                                            <div class="auth__form-group">
+                                                <input type="repass" class="auth__form-input" placeholder="Nhập lại mật khẩu"></div>
+                                        </div>
+
+                                        <div class="auth__form-aside">
+                                            <p class="auth__form-policy-text"> Bằng việc đăng ký, bạn đồng ý với chúng tôi
+                                                <a href="" class="auth__form-policy-link">Điều khoản dịch vụ </a>&
+                                                <a href="" class="auth__form-policy-link">Và chính sách bảo mật</a>
+                                            </p>
+                                        </div>
+                                        <div class="auth__form-controls">
+                                            <button class="btn control-back"><a href="./index.html">TRỞ LẠI </a> </button>
+                                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                        </div>
+                                </div>
+                                <div class="auth__form-socials">
+                                    <a href="" class="auth__form-socials-fa btn btn-size-s btn--with-icon">
+                                        <i class="auth__form-socials-icon fab fa-facebook-square"></i>
+                                        <span class="auth__form-socials-title">Kết nối với facebook</span>
+                                        
+                                    </a>
+                                    <a href="" class="auth__form-socials-gg btn btn-size-s btn--with-icon">
+                                        <i class="auth__form-socials-icon fab fa-google"></i>
+                                        <span class="auth__form-socials-title">Kết nối với google</span>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                
+                        <!-- Login form -->
+                            <div class="auth__form" id ="form-login">
+                                <div class="auth__form-container">
+                                        <div class="auth__form-header">
+                                            <h3 clas="auth__form-heading" id="heading-login-from-loginform">Đăng nhập</h3>
+                                            <span class="auth__form_switch-btn" id="heading-register-from-loginform">Đăng ký </span>  
+                                        </div>
+
+                                        <div class="auth__form-form">
+                                            <div cl.,ass="auth__form-group">
+                                                <input type="name" class="auth__form-input" placeholder="Email của bạn"></div>
+                                            <div class="auth__form-group">
+                                                <input type="pass" class="auth__form-input" placeholder="Mật khẩu của bạn"></div>
+                                    
+                                        </div>
+
+                                        
+                                        <div class="auth__form-hepl">
+                                        <a href="" class="auth__form-hepl-link forget-pass">Quên mật khẩu</a>
+                                        <span class="auth__form-hepl-area"></span>
+                                        <a href="" class="auth__form-hepl-link need-hepl">Cần trợ giúp?</a>
+                                        </div>
+
+                                        <div class="auth__form-controls">
+                                            <button class="btn control-back" > <a href="./index.html"> TRỞ LẠI</a></button>
+                                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                                        </div>
+                                </div>
+                                <div class="auth__form-socials">
+                                    <a href="" class="auth__form-socials-fa btn btn-size-s btn--with-icon">
+                                        <i class="auth__form-socials-icon fab fa-facebook-square"></i>
+                                        <span class="auth__form-socials-title">Đăng nhập với facebook</span>
+                                        
+                                    </a>
+                                    <a href="" class="auth__form-socials-gg btn btn-size-s btn--with-icon">
+                                        <i class="auth__form-socials-icon fab fa-google"></i>
+                                        <span class="auth__form-socials-title">Đăng nhập với google</span>
+                                        
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="header-with-search">
+                <div class="header-logo">
+                    <a href="/">
+                        <img src="Content/img/logoco.jpg" class="main-logo" alt="ảnh hiện không khả dụng" />
+                    </a>
+                </div>
+                <div class="header-search">
+                    <div class="header-search-input-wrap">
+                        <input type="text" class="header-search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <!-- search history -->
+                        <div class="header-search-history">
+                                <h4 class="header-search-history-heading">Lịch sử tìm kiếm</h4>
+                                <ul class="header-search-history-list">
+                                    <li class="header-search-history-item">
+                                        <a href="">kem dưỡng da ban đêm</a>
+                                    </li>
+                                    <li class="header-search-history-item">
+                                        <a href="">kem chống nắng</a>
+                                    </li>
+                                    <li class="header-search-history-item">
+                                        <a href="">tonner</a>
+                                    </li>
+                                    <li class="header-search-history-item ">
+                                        <a href="">xịt khoáng</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-search-icon-btn ">
+                        <i class="search fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="header-cart">
+                    <div class="header-cart-wrap">
+                        <a href="" class="btn--favourite" title="sản phẩm yêu thích">
+                            <i class="far fa-heart heart--transparent--2"></i>
+                            <span>Yêu thích</span>
+                            <span class="header-cart-notice--2">
+                                0
+                            </span>
+                        </a>
+                        <div class="cart-wrap"onClick="location.href='http://127.0.0.1:5500/cart.html';">
+                            <i class="header-cart-icon fas fa-shopping-cart">
+                            </i>
+                            <div class="header-cart-list">
+                                <img src="Content/img/no-product.png" alt="" class="header-cart-no-cart-img">
+                                <p class="header-cart-msg">Chưa có sản phẩm<p>
+        
+                                <h4 class="header-cart-heading">Đã thêm sản phẩm</h4>
+                                <ul class="header-cart-list-item">
+                                    <!-- cart-item -->
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/chamsoccothe/rua-tay/gel-ru-a-tay-dr.auban-1.jpg" alt=""class ="header-cart-item-img">
+                                        <div class="header-cart-item-info">
+                                            <div class="header-cart-item-head">
+                                                <h5 class="header-cart-item-name">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</h5>
+                                                <div class="header-cart-item-price-wrap">
+                                                    <span class="header-cart-item-price"> 129.000đ </span>
+                                                    <span class="header-cart-item-multiply">x</span>
+                                                    <span class="header-cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-describe"> Chất gel trong suốt</span>
+                                                <span class="header-cart-item-delete">Xóa</span>
+                                            </div>                                  
+                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/trangdiem/mat/mascara/mascara-black-rouge-1.jpg" alt=""class ="header-cart-item-img">
+                                            <div class="header-cart-item-info">
+                                                <div class="header-cart-item-head">
+                                                    <h5 class="header-cart-item-name">Chuốt mi black rouge </h5>
+                                                    <div class="header-cart-item-price-wrap">
+                                                        <span class="header-cart-item-price"> 140.000đ </span>
+                                                        <span class="header-cart-item-multiply">x</span>
+                                                        <span class="header-cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="header-cart-item-body">
+                                                    <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                    <span class="header-cart-item-delete">Xóa</span>
+                                                </div>                                  
+                                            </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                            <img src="https://cor.vn/uploads/source/san-pham/trangdiem/moi/sonkem/g9/son-kem-g9-5.jpg" alt=""class ="header-cart-item-img">
+                                                <div class="header-cart-item-info">
+                                                    <div class="header-cart-item-head">
+                                                        <h5 class="header-cart-item-name">  Son kem lì G9 Skin First</h5>
+                                                        <div class="header-cart-item-price-wrap">
+                                                            <span class="header-cart-item-price">139.000đ </span>
+                                                            <span class="header-cart-item-multiply">x</span>
+                                                            <span class="header-cart-item-qnt">1</span>
+                                                        </div>
+                                                    </div>
+                        
+                                                    <div class="header-cart-item-body">
+                                                        <span class="header-cart-item-describe"> Sản phẩm bán chạy</span>
+                                                        <span class="header-cart-item-delete">Xóa</span>
+                                                    </div>                                  
+                                                </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                                <img src="https://cor.vn/uploads/source/san-pham/chamsocda/matna/matnadatset/goblin-apieu-4.jpg" alt=""class ="header-cart-item-img">
+                                                    <div class="header-cart-item-info">
+                                                        <div class="header-cart-item-head">
+                                                            <h5 class="header-cart-item-name">Mặt nạ dạng bột Apieu </h5>
+                                                            <div class="header-cart-item-price-wrap">
+                                                                <span class="header-cart-item-price"> 88.000đ </span>
+                                                                <span class="header-cart-item-multiply">x</span>
+                                                                <span class="header-cart-item-qnt">1</span>
+                                                            </div>
+                                                        </div>
+                            
+                                                        <div class="header-cart-item-body">
+                                                            <span class="header-cart-item-describe"> Sản phẩm mới ra</span>
+                                                            <span class="header-cart-item-delete">Xóa</span>
+                                                        </div>                                  
+                                                    </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                                    <img src="https://cor.vn/uploads/source/san-pham/trangdiem/mat/phanmat/hold-live/bc572d9a526986785ea5276a0e1d8d69.jpg" alt=""class ="header-cart-item-img">
+                                                        <div class="header-cart-item-info">
+                                                            <div class="header-cart-item-head">
+                                                                <h5 class="header-cart-item-name">Phấn mặt color school </h5>
+                                                                <div class="header-cart-item-price-wrap">
+                                                                    <span class="header-cart-item-price">68.000đ </span>
+                                                                    <span class="header-cart-item-multiply">x</span>
+                                                                    <span class="header-cart-item-qnt">1</span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="header-cart-item-body">
+                                                                <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                                <span class="header-cart-item-delete">Xóa</span>
+                                                            </div>                                  
+                                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="https://cor.vn/uploads/source/san-pham/trangdiem/moi/sonkem/dearmay/son-dearmay-velvet.jpg" alt=""class ="header-cart-item-img">
+                                            <div class="header-cart-item-info">
+                                                <div class="header-cart-item-head">
+                                                    <h5 class="header-cart-item-name">Son lì Deamay</h5>
+                                                    <div class="header-cart-item-price-wrap">
+                                                        <span class="header-cart-item-price"> 125.000đ </span>
+                                                        <span class="header-cart-item-multiply">x</span>
+                                                        <span class="header-cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                            <div class="header-cart-item-body">
+                                                    <span class="header-cart-item-describe">Sản phẩm phổ biến</span>
+                                                    <span class="header-cart-item-delete">Xóa</span>
+                                                </div>                                  
+                                            </div>
+                                    </li>
+                                </ul> 
+                                <a href="#"class="btn-view-cart btn">
+                                <span class="btn-view-cart-label ">GIỎ HÀNG
+                                    <i class="fas fa-angle-double-right cart-button-icon"></i>
+                                </span>
+                                </a>
+                            </div>
+                            <span class="header-cart-notice">
+                                3
+                            </span>
+                        </div>
+                        <div class="icon-phone hide-on-table-mobile">
+                            <i class="fas fa-phone header-cart-icon-phone "></i>
+                        </div>
+                        <h4 class="hotline hide-on-table-mobile">hotline: 0902611297</h4>
+                        <!-- No cart class: header-cart-list-no-cart-->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar  -->
+    <div class="row-nav">
+        <div class="grid nav-container">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="trangdiem" class="navbar__menu-item-link "> TRANG CHỦ </a>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--trangdiem">
+                    <a href="trangdiem" class="navbar__menu-item-link ">
+                        TRANG ĐIỂM
+                        <i class="fa fa-angle-down navbar__menu-item--down"></i>
+                    </a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content1">
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="khuonmat">KHUÔN MẶT</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="cushion">Cushion</a></li>
+                                <li><a href="kemnen">Phấn nền</a></li>
+                                <li><a href="kemnenchekhuyetdiem">Kem nền che khuyết điểm</a></li>
+                                <li><a href="kemlot">Kem lót</a></li>
+                                <li><a href="phanphuphannen">Phấn phủ-Phấn nền</a></li>
+                                <li><a href="mahong">Má hồng</a></li>
+                                <li> <a href="taokhoi">Tạo khối-Highlighter</a></li>
+                                <li> <a href="xitkhoangnen">Xịt khoáng nền</a></li>
+                            </ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="mat">MẮT</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li> <a href="mascara">Mascara</a></li>
+                                <li><a href="eyeliner">Eyeliner</a></li>
+                                <li><a href="kemlotmat">Kem lót mắt</a></li>
+                                <li><a href="kemmay">Kẻ mày</a></li>
+                                <li><a href="phanmat">Phấn mắt</a></li>
+                            </ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="moi">MÔI</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="sonmoi"> Son môi</a></li>
+                                <li><a href="sonduong"> Son dưỡng</a></li>
+                                <li><a href="chekhuyetdiemmoi"> Che khuyết điểm môi</a></li>
+                                <li><a href="matnamoi"> Mặt nạ môi</a></li>
+                                <li><a href="taydachetmoi"> Tẩy da chết môi</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="moi">ĐỒ DÙNG </a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="sonmoi"> Hộp đa năng</a></li>
+                                <li> <a href="sonduong"> Bì cứng</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--chamsocda">
+                    <a href="chamsocdamat" class="navbar__menu-item-link">CHĂM SÓC DA<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content2">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="duongda">DƯỠNG DA</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li> <a href="dactri">Đặc trị</a></li>
+                                <li><a href="toner">Toner-Nước hoa hồng</a></li>
+                                <li><a href="Essence ">Essence - Serum - Ampouley</a></li>
+                                <li><a href="kemchongnang "> Kem chống nắng</a></li>
+                                <li> <a href="lotion"> Lotion  Sữa dưỡng</a></li>
+                                <li><a href="kemduongda"> Kem dưỡng da</a></li>
+                                <li><a href="duongvungmat"> Dưỡng vùng mắt</a></li>
+                                <li><a href="boduongda"> Bộ dưỡng da</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="mat">LÀM SẠCH DA</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="suaruamat "> Sửa rửa mặt</a></li>
+                                <li> <a href="taytrang"> Tẩy trang</a></li>
+                                <li><a href="taytebaochet"> Tẩy tế bào chết</a></li>
+                            </ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="moi">MASK - MẶT NẠ</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="matnalotmun"> Mặt nạ lột mun</a></li>
+                                <li><a href="matnadatset"> Mặt nạ đất sét</a></li>
+                                <li><a href="matnagiay"> Mặt nạ giấy</a></li>
+                                <li><a href="matnangu"> Mặt nạ ngủ</a></li>
+                                <li><a href="matnamat"> Mặt nạ mắt</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--chamsoccothe">
+                    <a href="chamsocbody" class="navbar__menu-item-link">CHĂM SÓC CƠ THỂ<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content3">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">SỬA TẮM, DẦU GỘI</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">TẨY LÔNG</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="thucphamchucnang">THỰC PHẨM CHỨC NĂNG</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="duongthe">DƯỠNG THỂ</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="khumui">KHỬ MÙI</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="duongdatay">DƯỠNG DA TAY</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="duongthe">CHĂM SÓC RĂNG MIỆNG</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="taytebaochet">TẨY TẾ BÀO CHẾT</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="duongmi">DƯỠNG MI</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--nuochoa">
+                    <a href="nuochoa" class="navbar__menu-item-link">NƯỚC HOA<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content4">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">NƯỚC HOA</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">XỊT THƠM BODY</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--chamsoctoc">
+                    <a href="chamsoctoc" class="navbar__menu-item-link">CHĂM SÓC TÓC<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content5">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">DẦU GỘI-XÃ</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">SERUM DƯỠNG TÓC</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--loaida">
+                    <a href="chamsocbody" class="navbar__menu-item-link">LOẠI DA<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content6">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">DA DẦU MỤN</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">DA NHẢY CẢM</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">LÃO HÓA DA</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">NÁM, SÁNG DA</a>
+                            </strong>
+                            <ul class="navbar__list--item"></ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--tapchilamdep">
+                    <a href="tapchilamdep" class="navbar__menu-item-link">TẠP CHÍ LÀM ĐẸP<i class="fa fa-angle-down navbar__menu-item--down "></i></a>
+                    <ul class="navbar__menu__list--sub navbar__menu__list--sub--content7">
+                        <li class="col__submenu ">
+                            <strong class="title-sub">
+                                <a href="suatamdaugoi">KIẾN THỨC LÀM ĐẸP</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="trangdiemconban">Trang điểm cơ bản</a></li>
+                                <li> <a href="meotrangdiem">Mẹo trang điểm</a></li>
+                                <li><a href="xuhuongtrangdiem">Xu hướng trang điểm</a></li>
+                            </ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">BÍ QUYẾT CHĂM SÓC DA</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li><a href="meochamsocda">Mẹo chăm sóc da</a></li>
+                                <li><a href="xuhuongchamsocda">Xu hướng chăm sóc da</a></li>
+                                <li><a href="trimunhieuqua">Trị mụn hiệu quả</a></li>
+                                <li> <a href="chámocdacoban">Chăm sóc da cơ bản</a></li>
+                            </ul>
+                        </li>
+                        <li class="col__submenu">
+                            <strong class="title-sub">
+                                <a href="taylong">REVIEW SẢN PHẨM</a>
+                            </strong>
+                            <ul class="navbar__list--item">
+                                <li> <a href="reviewsanphamchamsocda">Review sản phẩm chăm sóc da</a></li>
+                                <li><a href="reviewsanphamtrangdiem">Review sản phẩm trang điểm</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item navbar__menu-item--hotdeals">
+                    <a href="hotdeals" class="navbar__menu-item-link">DEALS</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="header-search-block">
+            <i class="search fas fa-search search-icon"></i>
+            <div class="header-search-block--2-wrap">
+                <div class="header-search-block--2">
+                    <input type="text" placeholder="Nhập để tìm kiếm sản phẩm" class = "input--search--2">
+                    <div class="search--2">
+                        <i class="search fas fa-search search-icon"></i>
+                    </div>
+                    <div class="header-search-history header-search-history--2">
+                        <h4 class="header-search-history-heading header-search-history-heading--2">Lịch sử tìm kiếm</h4>
+                        <ul class="header-search-history-list">
+                            <li class="header-search-history-item header-search-history-item--2">
+                                <a href="">kem dưỡng da ban đêm</a>
+                            </li>
+                            <li class="header-search-history-item header-search-history-item--2">
+                                <a href="">kem chống nắng</a>
+                            </li>
+                            <li class="header-search-history-item header-search-history-item--2">
+                                <a href="">tonner</a>
+                            </li>
+                            <li class="header-search-history-item header-search-history-item--2">
+                                <a href="">xịt khoáng</a>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid ">
+        <div class="product">
+            <div class="breadcrumb-">
+            <ul class="home-product-list">
+                <li class="home-product-item">
+                    <a href="" class="home=home-product-link">Trang chủ</a>
+                    <i class="home-product-icon fas fa-angle-right"></i>
+                </li>
+                <li class="home-product-item">
+                    <a href="" class="home=home-product-link">Sửa rửa mặt</a>
+                    <i class="home-product-icon fas fa-angle-right"></i>
+                </li>
+                <li class="home-product-item">
+                    Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser (Bestseller)
+                </li>
+            </ul>
+            </div>
+            <div class="product-content">
+                <div class="col-lg-4">
+                    <div class="product-image" >
+                       <img src="https://beautygarden.vn/Upload/Files/a4-14022019023659.jpg?width=350&height=391&v=07062020" alt=""id="image-big">
+                    </div>
+                    <div class="product-diff">
+                        <div class="col-carousel">
+                            <div class="owl-carousel carousel-second owl-theme owl-loaded">
+                                <div class="grid__column--2--4">
+                                    <img src="https://beautygarden.vn/Upload/Files/a4-14022019023659.jpg?width=350&height=391&v=07062020" alt=""class="home__product__item--img--small"id ="image-small">
+                                </div>
+                                <div class="grid__column--2--4">
+                                    <img src="https://beautygarden.vn/Upload/Files/a6-14022019023711.jpg" alt=""class="home__product__item--img--small" id ="image-small">
+                                </div>
+                                <div class="grid__column--2--4">
+                                    <img src="https://beautygarden.vn/Upload/Files/a3-14022019023709.jpg" alt=""class="home__product__item--img--small "id ="image-small">
+                                </div>
+                                <div class="grid__column--2--4">
+                                    <img src="https://beautygarden.vn/Upload/Files/a3-14022019023709.jpg" alt=""class="home__product__item--img--small"id ="image-small">
+                                </div>
+                                <div class="grid__column--2--4">
+                                    <img src="https://beautygarden.vn/Upload/Files/a3-14022019023709.jpg" alt=""class="home__product__item--img--small"id ="image-small">
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-title col-lg-8 font-size14">
+                    <div class="product-name">
+                        Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser (Bestseller)
+                    </div>
+                    <!-- Đánh giá sản phẩm -->
+                    <ul class="product__rating">
+                        <li class="product__rating-item nopadding-product">
+                            <a href="#" class="product__rating-item-index">4.8</a>
+                            <i class="product__rating-star home-product-item__star--gold font-size14 fas fa-star"></i>
+                            <i class="product__rating-star home-product-item__star--gold font-size14 fas fa-star"></i>
+                            <i class="product__rating-star home-product-item__star--gold font-size14 fas fa-star"></i>
+                            <i class="product__rating-star home-product-item__star--gold font-size14 fas fa-star"></i>
+                            <i class="product__rating-star home-product-item__star--grey font-size14 fas fa-star"></i>
+                        </li>
+                        <li class="product__rating-item product__rating-evaluate">
+                            <a href=""class="text-dec font-size14">270 lượt đánh giá</a>
+                        </li>
+                        <li class="product__rating-item product__rating-item--sold">
+                            <a href=""class="text-dec font-size1.4">1.8k đã bán</a>
+                        </li>
+                    </ul>
+                    <div class="product__price">
+                        <span class="product__price-new">
+                                180,000 <sup> đ</sup>
+                        </span>
+                        <span class="product__price-old">220,000 <sup>đ</sup></span>
+                        <span class="product__price-discount">-18%</span>
+                    </div>
+                    <div class="product__price-market">Giá thị trường : 240,6000 <sup>đ</sup> - Tiết kiệm 26,000 <sup>đ</sup>
+                        <span class="product__price-discount-market">(-14%)</span>
+                    </div>
+                    <div class="brand">
+                        Thương hiệu : Innisfree
+                    </div>
+                    <div class="overviewer">
+                        <p> -  Sản phẩm có dạng kem mịn dễ dàng tạo bọt, cung cấp các dưỡng chất cần thiết từ các chiết xuất tự nhiên.</p>
+                        <p> -  Loại sạch bụi bẩn và tạp chất trên da nhanh chóng hiệu quả. </p>
+                        <p> -  Hút nhờn và ngăn ngừa lão hóa da.</p>
+                    </div>
+                    <div class="product__status">Tình trạng: <span class="status">Còn hàng</span></div>
+                    <div class="product__amount">
+                        <div class="product__amount-heading">
+                            Số lượng
+                        </div>
+                        <div class="product__amount-content">
+                            <div class="product__amount-add-product">
+                                <button class="product__amount-item">-</button>
+                                <input type="text" value="1" class="product__amount-item product__amount-item-input">
+                                <button class="product__amount-item">+</button>
+                            </div>
+                            <div class="product__amount-product-available">22 sản phẩm có sẵn</div>
+                        </div>
+                    </div>
+                    <div class="product__cart-buy " >
+                        <a href="cart.html" class="product__cart-buy-item product__cart-buy-add">
+                            <i class="product__cart-buy-add-item fas fa-cart-plus"></i>Thêm giỏ hàng
+                        </a>
+                        <div class="product__cart-buy-item product__cart-buy-now">Mua ngay</div>
+                        <div class="product__cart-buy-item product__cart-buy-like"> <a href=""><i class="far fa-heart heart-like"></i></a></div>
+                    </div>
+                    <div class="product__footer">
+                        <div class="product__footer-item">
+                            <div class="product__footer-item-img product__footer-item-left" style="background-image: url(https://cor.vn/uploads/source/icon/icongiaohangnhanh.png);">
+                                
+                            </div>
+                            Giao hàng toàn quốc
+                        </div>
+                        <div class="product__footer-item">
+                            <div class="product__footer-item-img product__footer-item-middle" style="background-image: url(https://cor.vn/uploads/source/icon/iconcamketchatluong.png);"></div>
+                            Cam kết 100% hàng chính hãng
+                        </div>
+                        <div class="product__footer-item">
+                            <div class="product__footer-item-img product__footer-item-right" style="background-image: url(https://cor.vn/uploads/source/icon/iconhotrotuvankhachhang.png);"></div>
+                                Miễn phí trả hàng vòng 7 ngày
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__description">
+                <div class="product__description-left col-lg-9">
+                    <div class="product__description-heading">
+                        MÔ TẢ SẢN PHẨM
+                    </div>
+                    <div class="product__description-content">
+                       
+                        <p><a href="http://127.0.0.1:5500/product.html" value="">Sữa rửa mặt Innisfree Green Tea Morning Cleansing Foam</a> chứa chiết xuất 88% từ lá trà xanh tự nhiên, giàu độ ẩm và các thành phần chống oxi hoá, giúp làm sạch bụi bẩn và các tạp chất trên da, hút nhờn và ngăn ngừa những dấu hiệu làm lão hoá da. Đặc biệt phù hợp với da dầu và có mụn. 
+                            Đây là sản phẩm sữa rửa mặt chất lượng được ưa chuộng nhất hiện nay.</p> 
+                        <p>
+                            <p class="text-bold">Sữa rửa mặt Trà xanh Green Tea Cleansing Foam</p>
+                            <p class="text-bold"> Dung tích: 150ml</p>
+                            <p class="text-bold">  Xuất xứ: Innisfree - Hàn Quốc</p>
+                            <img src="https://beautygarden.vn/Upload/tinymce/2019/2/14/a3023722.jpg" alt=""class="product__description-img">
+                        </p>
+                      <a href="#" role="tab" data-toggle="tab" title="Công Dụng Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser"class="product-name">
+                          <h2 class="theh2">Công Dụng Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser</h2>
+                      </a>
+                      <p>Sữa rửa mặt Trà xanh Innisfree Green Tea Morning Cleanser giúp loại bỏ nhẹ nhàng lớp trang điểm, cho làn da tươi mới, tạo cảm giác thư giãn đầy sức sống cho làn da bị khô căng. Không gây nhờn dính sau khi sử dụng bạn nhé...!
+
+                        Innisfree Green Tea Morning Cleanser là sản phẩm sữa rửa mặt chiết xuất hoàn toàn từ lá trà xanh tự nhiên, giàu độ ẩm và các thành phần chống oxi hoá và kaolin giúp làm sạch bụi bẩn và các tạp chất trên da, hút nhờn và ngăn ngừa những dấu hiệu làm lão hoá da.
+                        
+                        Sữa rửa mặt chiết xuất Trà xanh từ Đảo Jeju Innisfree Green Tea Morning Cleanser của hãng Innisfree hoàn toàn lành tính, với công nghệ chưng cất tiên tiến các tinh chất từ lá trà, thích hợp cho mọi loại da, kể cả da nhạy cảm, đặc biệt phù hợp với da dầu và có mụn. Cho một làn da sáng mịn và khỏe mạnh.
+                        
+                        Innisfree Green Tea Morning Cleanser chứa linoleic acid, catechin, vitamin E và các chất khoáng có tác dụng phục hồi độ đàn hồi và sự tươi trẻ cho làn da, polyphenol trong trà xanh như EGCG có tác dụng chống tia cực tím, chống oxi hóa da và các ảnh hưởng xấu từ môi trường như khói, bụi bẩn, kháng khuẩn, hạ nhiệt độ da, hỗ trợ tái tạo tế bào da, kiềm dầu, hạn chế mụn.</p>
+                        <p>
+                            <img src="https://beautygarden.vn/Upload/tinymce/2019/2/14/a5023743.jpg" alt=""class="product__description-img">
+                        </p>
+                        <a href="#" role="tab" data-toggle="tab" title="Hướng Dẫn Sử Dụng Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser" class="product-name">
+                            <h2 class="theh2">Hướng Dẫn Sử Dụng Sữa Rửa Mặt Innisfree Green Tea Morning Cleanser</h2>
+                        </a>
+                        <p>Cho một ít sản phẩm sữa rửa mặt trà xanh vào lòng bàn tay, tạo bọt matxa khắp mặt theo chiều từ dưới lên, theo kết cấu da, từ trong ra ngoài và rửa sạch lại với nước.</p>
+                        <p>
+                            <img src="https://beautygarden.vn/Upload/tinymce/2019/2/14/a6023753.jpg" alt=""class="product__description-img">
+                        </p>
+                    </div>
+                </div>
+                <div class="product__description-right col-lg-3">
+                    <div class="product__description-right--slide">
+                        <img src="./Content/img/aha.jpg" alt="">
+                    </div>
+                    <div class="product__description-right-content">
+                        <div class="product__description-heading-right">
+                            SẢN PHẨM CÙNG LOẠI
+                        </div>
+                       <div class="product__description-right-product-same">
+                        <li class="header-cart-item product__description-right-item">
+                            <img src="https://beautygarden.vn/Upload/Files/avatar-sp-web11-recovered-recovered-recovered-recovered-06062020020531.jpg?width=350&height=391" alt=""class ="header-cart-item-img product__description-right-product-image">
+                            <div class="header-cart-item-info header-cart-item-info-product-same">
+                                <div class="header-cart-item-head">
+                                    <a  href="" class="header-cart-item-name ">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</a>
+                                   
+                                </div>
+                                <div class="header-cart-item-body">
+                                    <span class="header-cart-item-describe product__description-right-product-same-price"> 90,000 <sup>đ</sup></span>
+                                    
+                                </div>                                  
+                            </div>
+                        </li>
+                        <li class="header-cart-item product__description-right-item">
+                            <img src="https://beautygarden.vn/Upload/Files/avatar-sp-web11-recovered-recovered-recovered-recovered-06062020102524.jpg?width=350&height=391" alt=""class ="header-cart-item-img product__description-right-product-image ">
+                            <div class="header-cart-item-info header-cart-item-info-product-same">
+                                <div class="header-cart-item-head">
+                                    <a  href="" class="header-cart-item-name ">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</a>
+                                   
+                                </div>
+                                <div class="header-cart-item-body">
+                                    <span class="header-cart-item-describe product__description-right-product-same-price"> 90,000 <sup>đ</sup></span>
+                                    
+                                </div>                                  
+                            </div>
+                        </li>
+                        <li class="header-cart-item product__description-right-item">
+                            <img src="https://beautygarden.vn/Upload/Files/chong-nang-vang-05062020114939.jpg?width=350&height=391" alt=""class ="header-cart-item-img product__description-right-product-image">
+                            <div class="header-cart-item-info header-cart-item-info-product-same">
+                                <div class="header-cart-item-head">
+                                    <a  href="" class="header-cart-item-name ">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</a>
+                                   
+                                </div>
+                                <div class="header-cart-item-body">
+                                    <span class="header-cart-item-describe product__description-right-product-same-price"> 90,000 <sup>đ</sup></span>
+                                    
+                                </div>                                  
+                            </div>
+                        </li>
+                        <li class="header-cart-item product__description-right-item">
+                            <img src="https://beautygarden.vn/Upload/Files/forest-for-men-shaving-cleansing-foam-2-200x200-15052020035135.jpg?width=350&height=391" alt=""class ="header-cart-item-img product__description-right-product-image">
+                            <div class="header-cart-item-info header-cart-item-info-product-same" >
+                                <div class="header-cart-item-head">
+                                    <a  href="" class="header-cart-item-name ">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</a>
+                                   
+                                </div>
+                                <div class="header-cart-item-body">
+                                    <span class="header-cart-item-describe product__description-right-product-same-price"> 90,000 <sup>đ</sup></span>
+                                    
+                                </div>                                  
+                            </div>
+                        </li>
+                        <li class="header-cart-item product__description-right-item product__description-right-item-noboerbottom">
+                            <img src="https://beautygarden.vn/Upload/Files/avatar-sp-web11-recovered-recovered-recovered-recovered-06062020020531.jpg?width=350&height=391" alt=""class ="header-cart-item-img product__description-right-product-image">
+                            <div class="header-cart-item-info header-cart-item-info-product-same">
+                                <div class="header-cart-item-head">
+                                    <a  href="" class="header-cart-item-name ">Gel rửa tay khô bán chạy nhất top 3 tháng trong đầu năm 2020</a>
+                                   
+                                </div>
+                                <div class="header-cart-item-body">
+                                    <span class="header-cart-item-describe product__description-right-product-same-price"> 90,000 <sup>đ</sup></span>
+                                    
+                                </div>                                  
+                            </div>
+                        </li>
+
+                       </div>
+                    </div>
+                       
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid__row-4">
+            <div class="background__footer">
+                <div class="background__footer--opacity">
+                    <ul class="layout__footer--list">
+                        <li class="layout__footer--item">
+                            <div class="layout__footer--header">
+                                <img src="/Content/img/logoco.jpg" alt="" class="image__logo--footer">
+                                <div class="layout__footer--title ">
+                                    <h4> HỆ THỐNG CỬA HÀNG</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item">
+                                    <a href="address1" title="Số 71, Đường số 3, Cư Xá Đô Thành, P4, Q3 - 0911 784 114 ">
+                                        <i class="fas fa-map-marker-alt address--icon"></i>
+                                        <span class="title-header">Quận 3 Tp.HCM -</span>
+                                        <span class="title--sub">Số 71, Đường số 3, Cư Xá Đô Thành, P4, Q3 - 0911 784 114 </span>
+                                        <img src="/Content/img/maps-compressor.png" alt="Số 71, Đường số 3, Cư Xá Đô Thành, P4, Q3 - 0911 784 114">
+                                    </a>
+                                </li>
+                                <li class="address--item">
+                                    <a href="address2" title=" 98B Phan Đăng Lưu, P.3, Q.Phú Nhuận - 0911 384 114">
+                                        <i class="fas fa-map-marker-alt address--icon"></i>
+                                        <span class="title-header"> Q.Phú Nhuận Tp.HCM  -</span>
+                                        <span class="title--sub"> 98B Phan Đăng Lưu, P.3, Q.Phú Nhuận - 0911 384 114</span>
+                                        <img src="/Content/img/maps-compressor.png" alt="98B Phan Đăng Lưu, P.3, Q.Phú Nhuận - 0911 384 114">
+                                    </a>
+                                </li>
+                                <li class="address--item">
+                                    <a href="address3" title="152, Chùa Lộc, Quận Đống Đa, Hà Nội">
+                                        <i class="fas fa-map-marker-alt address--icon"></i>
+                                        <span class="title-header"> Hà Nội -</span>
+                                        <span class="title--sub">152, Chùa Lộc, Quận Đống Đa, Hà Nội - 0911 384 114</span>
+                                        <img src="/Content/img/maps-compressor.png" alt="152, Chùa Lộc, Quận Đống Đa, Hà Nội">
+                                    </a>
+                                </li>
+                                <li class="address--item">
+                                    <a href="address3" title=" 94 Âu Cơ, P.Hòa Khánh Bắc, Q.Liên Chiểu, TP. Đà Nẵng ">
+                                        <i class="fas fa-map-marker-alt address--icon"></i>
+                                        <span class="title-header"> Gia Lai -</span>
+                                        <span class="title--sub"> 79 Hai Bà Trưng, P.Diên Hồng, Tp.Pleiku,Tỉnh Gia Lai - 0911 384 114</span>
+                                        <img src="/Content/img/maps-compressor.png" alt=" 94 Âu Cơ, P.Hòa Khánh Bắc, Q.Liên Chiểu, TP. Đà Nẵng">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="layout__footer--item">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item "><a href="">Chính sách bảo mật</a></li>
+
+                                <li class="address--item "><a href="">Phương thức đặt hàng</a></li>
+
+                                <li class="address--item "><a href="">Chính sách vận chuyển</a></li>
+
+                                <li class="address--item "><a href="">Chính sách đổi trả</a></li>
+                            </ul>
+                        </li>
+                        <li class="layout__footer--item">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4>GIỚI THIỆU COR.VN</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item "><a href="">Về Cỏ</a></li>
+                                <li class="address--item">Địa chỉ: 255 Bình Lợi, P. 13, Q. Bình Thạnh. Tp.HCM</li>
+                                <li class="address--item "> <i class="fas fa-phone address--icon"></i>Hotline: 0902611297 - 0329806032 or</li>
+                                <li class="address--item "><i class="far fa-envelope address--icon"></i>Mail: corcosmetics.skincare@gmail.com</li>
+                                <li class="address--item register-info">ĐĂNG KÝ NHẬN THÔNG TIN KHUYẾN MÃI</li>
+                                <li>
+                                    <div class="header-search-block--2 block-mail">
+                                        <input type="text" placeholder="vui lòng nhập địa chỉ" class = "input--search--2 register-mail">
+                                        <div class="search--2 register-mail-icon">
+                                        GỬI
+                                    </div>
+                                    </div>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="layout__footer--list">
+                        <li class="layout__footer--item ">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4>WEBSITE THUỘC QUYỀN</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item">CÔNG TY CỔ PHẦN CỎ COSMETICS & SKINCARE</li>
+                                <li class="address--item">ĐKKD số: 0314635748</li>
+                                <li class="address--item">Do Sở KH&ĐT Tp. HCM Cấp ngày 21/09/2017</li>
+                            </ul>
+                        </li>
+                        <li class="layout__footer--item ">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4>THEO DÕI</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item "><a href=""><i class="footer-icon fab fa-facebook"></i>Facebook</a></li>
+                                <li class="address--item "><a href=""><i class="footer-icon fab fa-instagram"></i>Instagram</a></li>
+                                <li class="address--item "> <a href=""><i class="footer-icon fab fa-linkedin"></i>LinkedIn</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="layout__footer--item ">
+                            <div class="layout__footer--header">
+                                <div class="layout__footer--title layout__footer--title--border">
+                                    <h4>VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h4>
+                                </div>
+                            </div>
+                            <ul class="address">
+                                <li class="address--item ">
+                                    <div class="footer-download">
+                                        <img src="/Content/img/QRcode.png" alt="" class="footer-download-qr">
+                                        <div class="footer-download-app">
+                                            <a href="" class="footer-download-app-link">
+                                                <img src="/Content/img/appstore1.png" alt="" class="footer-download-img appstore">
+                                            </a>
+                                            <a href="" class="footer-download-app-link">
+                                                <img src="/Content/img/chplay3.png" alt="" class="footer-download-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer--title">
+                <span>
+                    &#169 2020 Cỏ Comestics & Skincare
+                </span>
+            </div>
+        </div>
+    </footer>
+   <button  onclick="topFunction()" id="scroll-to-top" >
+        <img src="./Content/img/scroll.png" alt=""class="img-scroll">
+   </button>
+    <script src="/Content/jquery/jquery-3.5.1.js"></script>
+    <script src="/Content/js/bootstrap.bundle.min.js"></script>
+    <script src="/Content/carousel/owl.carousel.min.js"></script>
+    <script src="/Content/carousel/carousel.js"></script>
+    <script src="./Content/js/index.js"></script>
+</body>
+</html>

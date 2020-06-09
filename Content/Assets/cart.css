@@ -1,0 +1,146 @@
+.cart{
+    display: flex;
+}
+.row-1{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    text-align: left;
+}
+.cart__heading-text-small{
+    font-size: 1.4rem;
+    padding-top: 9px;
+}
+.cart__heading-text-small3{
+
+}
+li.cart__heading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 188px;
+    
+}
+.cart__product-display{
+    display: flex;
+    justify-content: space-evenly;
+}
+.no-gutters{
+    padding: 0;
+}
+.cart_payment{
+    text-align: end;
+}
+.header-cart-item-cart:hover{
+    background-color:#fff ;
+}
+.header-cart-item-img-cart{
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 90px;
+    height: 99px;
+}
+.header-cart-item-img-cart:hover{
+   transform: none;
+}
+.cart__product-display-info{
+    display: flex;
+    
+}
+.header-cart-item-head-cart{
+    align-items: flex-start;
+    display: block;
+}
+
+.header-cart-item-describe-cart{
+  line-height: 20px;
+  padding-top: 8px ;
+  font-size: 1.4rem;
+
+}
+.header-cart-item-describe-cart a{
+    color: #007bff;
+}
+.header-cart-item-describe-cart a:hover{
+    color:#007bff;
+}
+.price--new-cart{
+    margin: 0;
+    font-size: 1.3rem;
+}
+.price--old-cart{
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+.home__product__img--price-cart{
+    display: block;
+    margin-top: 9px;
+}
+.cart__product-display{
+    position: relative;
+}
+.cart__product-display::before{
+    content: "";
+    width: 101%;
+    height: 1px;
+    position: absolute;
+    bottom: -7px;
+    background-color: rgba(0,0,0,0.07);
+
+}
+
+.card__cart{
+    margin-top: 40px;
+    border-color: var(--color-2);
+    position: relative;
+}
+.card__cart-{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    font-size: 1.4rem;
+}
+/* .card__cart-:before{
+    content: "";
+    width: 101%;
+    height: 1px;
+    position: absolute;
+    bottom: -7px;
+    background-color: rgba(0,0,0,0.07);
+} */
+.cart__total-payment{
+    font-size: 2rem;
+    color: red;
+}
+.text-not-fee{
+    align-self: flex-end;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+.btn.btn--order{
+    margin-top: 12px;
+    height: 40px;
+    
+}
+.btn.btn--continute{
+    border-color: #ccc;
+    height: 40px;
+    margin-top: 12px;
+    color: black;
+    border: 1px solid #ccc;
+    background-color: var(--white-color);
+}
+.btn.btn--order:hover{
+  
+    background-color: var(--color-item-product);
+}
+.btn.btn--continute:hover{
+    background-color:#ccc;
+}
+.back-continute-icon{
+
+    color: black;
+    
+}
