@@ -641,6 +641,7 @@
     height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.35);
+    /* z-index: 999; */
    
 }
 .modal__body{
@@ -1484,7 +1485,8 @@ grid__row-1 {
 }
 .fa-angle-left, .fa-angle-right {
     font-size: 1.5rem;
-    color: var(--white-color);
+    color: rgba(0,0,0, 0.5);
+    margin: 0 3px;
 }
 .label__showroom {
     margin: 0 auto;

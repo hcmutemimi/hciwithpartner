@@ -5,7 +5,7 @@ $('.carousel-main').owlCarousel({
   autoplayHoverPause:true,
 responsiveClass: true,
   autoHeight: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 6000,
   smartSpeed: 2500,
   //nav: true,
       responsive: {
@@ -31,7 +31,7 @@ $('.carousel-second').owlCarousel({
   autoplayHoverPause:true,
   responsiveClass: true,
   autoHeight: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 6000,
   smartSpeed: 3000,
   //nav: true,
   responsive: {

@@ -12,9 +12,7 @@
     font-size: 1.4rem;
     padding-top: 9px;
 }
-.cart__heading-text-small3{
 
-}
 li.cart__heading{
     font-size: 1.7rem;
     font-weight: 500;
@@ -101,14 +99,7 @@ li.cart__heading{
     line-height: 30px;
     font-size: 1.4rem;
 }
-/* .card__cart-:before{
-    content: "";
-    width: 101%;
-    height: 1px;
-    position: absolute;
-    bottom: -7px;
-    background-color: rgba(0,0,0,0.07);
-} */
+
 .cart__total-payment{
     font-size: 2rem;
     color: red;
@@ -122,7 +113,6 @@ li.cart__heading{
 .btn.btn--order{
     margin-top: 12px;
     height: 40px;
-    
 }
 .btn.btn--continute{
     border-color: #ccc;
@@ -143,4 +133,7 @@ li.cart__heading{
 
     color: black;
     
+}
+.product__description-right-product-same-price{
+    color:#807d7d;
 }

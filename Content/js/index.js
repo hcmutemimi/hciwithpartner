@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded",function(){
     // Xử lí navbar
     var menunho = document.querySelector('.row-nav');
-    
+    var breadcrumbscroll=document.querySelector('.breadcrumb-')
     window.addEventListener('scroll',function(){
         if(window.pageYOffset>45){
             menunho.classList.add('navbar-larger')
+            breadcrumbscroll.classList.add('breadcrumb2')
         }
         else{
             menunho.classList.remove('navbar-larger')
+            breadcrumbscroll.classList.remove('breadcrumb2')
 		}
 	});
 	
@@ -115,7 +117,6 @@ document.addEventListener("DOMContentLoaded",function(){
     } else {
         newPath = path.replace('_Hover', '');
     }
-    
     return newPath;
     }
     //Di chuyển sản phẩm từ trang sản phẩm đến giỏ hàng
