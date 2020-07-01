@@ -673,7 +673,7 @@
 .auth__form_switch-btn{
     font-size:1.4rem ;
     font-weight: 500;
-    color:var(--primary-color);
+    
     cursor: pointer;
 }
 .auth__form{
@@ -1238,12 +1238,11 @@
 
 .btn__cart:hover {
     background-color: var(--color-2);
-    background: linear-gradient();
 }
 
-    .btn__cart:hover .btn__cart--icon--cricle {
-        background-color: var(--color-2);
-    }
+.btn__cart:hover .btn__cart--icon--cricle {
+    background-color: var(--color-2);
+}
 
 .favourite--active {
     background-color: var(--color-2);

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
      var mybutton = document.getElementById("scroll-to-top");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
-        if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 142) {
+        if (document.body.scrollTop > 142 || document.documentElement.scrollTop > 82) {
             mybutton.style.display = "block";
         } else {
             mybutton.style.display = "none";
@@ -79,10 +79,10 @@ document.addEventListener("DOMContentLoaded",function(){
         showformregister.style.display='block';
 
     }
+    // Khi nhán vào button đăng nhập
     btnshowformloginfromregister.addEventListener('click',openfromloginfromregister);
     function openfromloginfromregister(){
         showformregister.style.display='none';
-
         showformloginfromregister.style.display='block';  
     }
     // xử lí ảnh khi onmouseover, onmouseout
@@ -119,9 +119,5 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     return newPath;
     }
-    //Di chuyển sản phẩm từ trang sản phẩm đến giỏ hàng
-    
-    
-
 
 },false)
